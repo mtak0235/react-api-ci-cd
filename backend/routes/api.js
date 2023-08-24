@@ -18,6 +18,6 @@ const router = express.Router();
  */
 router.get('/hello', function (req, res, next) {
     const name = req.query.name || 'mtak';
-    res.json({message:'hello dear ${name}'});
+    res.json({message:`hello dear ${name}`});
 });
 module.exports=router;

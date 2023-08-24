@@ -1,3 +1,6 @@
+#primary info
+*.pem
+
 # Logs
 logs
 *.log
