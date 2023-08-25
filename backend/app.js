@@ -25,6 +25,8 @@ const options = {
 const openapiSpec = swaggerJsdocs(options);
 app.use('/api-docs',swaggerUi.serve, swaggerUi.setup(openapiSpec));
 
+var cors = require('cors')
+app.use(cors())
 
 // view engine setup
 
